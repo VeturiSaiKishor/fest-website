@@ -3,47 +3,100 @@
 <head>
   <title>ECENTRA2K26</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
   <style>
-    * { box-sizing: border-box; margin:0; padding:0; }
     body {
+      margin: 0;
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(120deg, #0f172a, #1e293b);
       color: white;
-      overflow-x: hidden;
     }
 
     header {
       text-align: center;
       padding: 100px 20px;
       background: linear-gradient(45deg,#7c3aed,#06b6d4);
-      animation: fadeDown 1s ease-out;
     }
 
     header h1 {
       font-size: 50px;
-      text-shadow: 0 0 20px rgba(255,255,255,0.4);
+      margin-bottom: 10px;
     }
 
     section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
-      animation: fadeUp 1s ease forwards;
-      opacity: 0;
+      text-align: center;
     }
 
     h2 {
-      text-align:center;
-      margin-bottom: 30px;
       font-size: 32px;
+      margin-bottom: 20px;
       color: #38bdf8;
     }
 
-    <section>
+    .events {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid #38bdf8;
+      box-shadow: 0 0 15px rgba(56,189,248,0.3);
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-top: 20px;
+      padding:14px 30px;
+      background:#22c55e;
+      color:black;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:bold;
+    }
+
+    footer {
+      text-align:center;
+      padding:30px;
+      background:#0f172a;
+      margin-top:50px;
+      font-size:14px;
+      color:#94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>ECENTRA2K26</h1>
+  <p>The Ultimate College Fest Experience</p>
+</header>
+
+<section>
+  <h2>About</h2>
+  <p>Welcome to ECENTRA2K26 — a celebration of innovation, fun, and competition.</p>
+</section>
+
+<section>
   <h2>Events</h2>
   <div class="events">
     <div class="card">
@@ -61,79 +114,10 @@
   </div>
 </section>
 
-    .card {
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 15px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 0 25px rgba(56,189,248,0.6);
-    }
-
-    .btn {
-      display:inline-block;
-      padding:14px 30px;
-      background:#22c55e;
-      color:black;
-      text-decoration:none;
-      border-radius:30px;
-      font-weight:bold;
-      transition: all 0.3s;
-    }
-
-    .btn:hover {
-      background:#16a34a;
-      transform: scale(1.1);
-    }
-
-    footer {
-      text-align:center;
-      padding:30px;
-      background:#0f172a;
-      margin-top:50px;
-      font-size:14px;
-      color:#94a3b8;
-    }
-
-    @keyframes fadeDown {
-      from {opacity:0; transform: translateY(-40px);}
-      to {opacity:1; transform: translateY(0);}
-    }
-
-    @keyframes fadeUp {
-      to {opacity:1; transform: translateY(0);}
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>ECENTRA2K26</h1>
-  <p>The Ultimate College Fest Experience</p>
-</header>
-
 <section>
-  <h2>About</h2>
-  <p style="text-align:center;">Welcome to ECENTRA2K26 — a celebration of innovation, fun, and competition.</p>
-</section>
-
-<section>
-  <h2>Events</h2>
-  <div class="events">
-    <div class="card"><h3></h3></div>
-    <div class="card"><h3></h3></div>
-    <div class="card"><h3></h3></div>
-  </div>
-</section>
-
-<section style="text-align:center">
   <h2>Date & Venue</h2>
-  <p>📅 MARCH 4-5 2026<br>📍 </p>
-  <br><br>
+  <p>📅 MARCH 4-5 2026</p>
+  <p>📍 </p>
   <a href="#" class="btn">Register Now</a>
 </section>
 
